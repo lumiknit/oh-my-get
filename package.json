@@ -1,0 +1,38 @@
+{
+	"name": "oh-my-get",
+	"version": "0.1.0",
+	"description": "",
+	"type": "module",
+	"scripts": {
+		"tailwind-watch": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+		"tailwind-build": "tailwindcss -i ./src/input.css -o ./src/output.css",
+		"start": "vite",
+		"dev": "vite",
+		"build": "tailwindcss -i ./src/input.css -o ./src/output.css && vite build",
+		"serve": "vite preview",
+		"tauri": "tauri",
+		"format": "prettier --write .",
+		"tauri:dev": "tauri dev",
+		"tauri:build": "tauri build"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"@tauri-apps/api": "^2",
+		"@tauri-apps/plugin-http": "~2",
+		"@tauri-apps/plugin-shell": "^2",
+		"solid-js": "^1.7.8",
+		"solid-toast": "^0.5.0"
+	},
+	"devDependencies": {
+		"@tauri-apps/cli": "^2",
+		"daisyui": "^4.12.20",
+		"eslint": "^9.16.0",
+		"eslint-plugin-solid": "^0.14.5",
+		"prettier": "^3.4.2",
+		"sass": "^1.82.0",
+		"tailwindcss": "^3.4.16",
+		"typescript": "^5.2.2",
+		"vite": "^5.3.1",
+		"vite-plugin-solid": "^2.8.0"
+	}
+}
