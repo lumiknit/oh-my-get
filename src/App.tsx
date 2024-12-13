@@ -1,6 +1,7 @@
 import { invoke } from "@tauri-apps/api/core";
 import { Component } from "solid-js";
 import toast, { Toaster } from "solid-toast";
+import RequestForm from "./components/http1/RequestForm";
 
 const App: Component = () => {
 	let refInput: HTMLInputElement = null!;
@@ -21,6 +22,10 @@ const App: Component = () => {
 		<>
 			<Toaster />
 			<main class="container">
+
+        <RequestForm />
+
+        <hr class="hr" />
 				<input
 					ref={refInput}
 					type="text"
